@@ -16,7 +16,7 @@ const cardsroutes = require("./routes/image-card");
 
 app.use("/", carouselroutes);
 app.use("/", cardsroutes);
-const PORT= 5000
+const PORT= process.env.PORT || 5000
 
 //creating server
 app.listen(PORT,()=>{
